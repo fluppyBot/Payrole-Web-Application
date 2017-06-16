@@ -8,11 +8,11 @@ namespace PAYROLE.DATA
 {
     public class ApplicationUser : IdentityUser
     {
-        public virtual Profile Profile { get; set; }
+        public virtual Employee Profile { get; set; }
 
         public void NewProfile(string id,string lastName,string firstName,string middleName,DateTime birthDate,string gender)
         {
-            Profile = new Profile
+            Profile = new Employee
             {
                 BirthDate = new DateTime(1990, 4, 14),
                 FirsName = "Jordan",

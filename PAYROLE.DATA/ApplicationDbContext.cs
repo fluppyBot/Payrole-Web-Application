@@ -12,7 +12,7 @@ namespace PAYROLE.DATA
         {
         }
 
-        public DbSet<Profile> Profile { get; set; }
+        public DbSet<Employee> Profile { get; set; }
         public DbSet<UserLogAudit> UserLogAudits { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
