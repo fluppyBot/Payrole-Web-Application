@@ -12,8 +12,18 @@ namespace PAYROLE.DATA
         {
         }
 
-        public DbSet<Employee> Profile { get; set; }
+        public UserLogAudit UserLogAudit { get; set; }
+        public DbSet<Employee> Employees { get; set; }
         public DbSet<UserLogAudit> UserLogAudits { get; set; }
+        public DbSet<CostCenter> CostCenters { get; set; }
+        public DbSet<Location> Locations { get; set; }
+        public DbSet<Division> Divisions { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<EmploymentStatus> EmploymentStatuses { get; set; }
+        public DbSet<EmploymentType> EmploymentType { get; set; }
+        public DbSet<LeaveType> LeaveType { get; set; }
+        public DbSet<LeaveBalance> LeaveBalances { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
